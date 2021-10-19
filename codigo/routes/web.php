@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\ClienteController;
+use App\Http\Controllers\FornecedorController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,3 +18,20 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+// Rotas para cliente
+
+Route::get('/clientes', [ClienteController::class, 'index']);
+
+Route::get('/index', [ClienteController::class, 'index']);
+
+Route::get('/create', [ClienteController::class, 'create']);
+
+Route::get('/store', [ClienteController::class, 'store']);
+
+// Rotas para fornecedor
+
+Route::get('fornecedor/create', [FornecedorController::class, 'create']);
+
+Route::get('fornecedor/store', [FornecedorController::class, 'store']);
+
