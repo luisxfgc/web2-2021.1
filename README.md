@@ -1,3 +1,4 @@
+
 # Atividade 2 
 
 Utilizando os conceitos apresentados em aula e o material sobre layouts:
@@ -15,3 +16,4 @@ https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox
 - 1 Layout utilizando layout-grids
 
 https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Grids
+
