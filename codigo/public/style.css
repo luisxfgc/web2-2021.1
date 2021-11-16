@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    height: 100vh;
+    background-color: #eeeeee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+}
+ul li {
+    list-style-type: none;
+}
+
+table{
+    padding: 4px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+th{
+    background-color: whitesmoke;
+}
+
+td{
+    background-color: rgb(165, 165, 165);
+    padding: 8px;
+}
+
+tr:nth-last-child(){
+    background-color: snow;
+}
+
+/* MOSTRAR CLIENTES */
+
+.clientesHeader{
+    width: 50%;
+    height: 80vh;
+    background-color: white;
+    box-shadow: 2px 1px 10px rgba(24, 24, 24, 0.226);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+    padding: 4rem;
+    margin-top: 2rem;
+}
+
+.fornecedorHeader{
+    width: 50%;
+    height: 80vh;
+    background-color: white;
+    box-shadow: 2px 1px 10px rgba(24, 24, 24, 0.226);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+    padding: 4rem;
+    margin-top: 2rem;
+}

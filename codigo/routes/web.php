@@ -21,7 +21,7 @@ Route::get('/', function () {
 
 // Rotas para cliente
 
-Route::get('/clientes', [ClienteController::class, 'index']);
+// Route::get('/clientes', [ClienteController::class, 'index']);
 
 Route::get('/index', [ClienteController::class, 'index']);
 
@@ -29,9 +29,15 @@ Route::get('/create', [ClienteController::class, 'create']);
 
 Route::get('/store', [ClienteController::class, 'store']);
 
+Route::get('clientes/mostrarClientes', [ClienteController::class, 'show']);
+
 // Rotas para fornecedor
 
 Route::get('fornecedor/create', [FornecedorController::class, 'create']);
 
 Route::get('fornecedor/store', [FornecedorController::class, 'store']);
+
+Route::get('fornecedor/mostrarFornecedor', [FornecedorController::class, 'show']);
+
+
 

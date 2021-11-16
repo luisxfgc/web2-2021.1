@@ -1,1 +1,1 @@
-<h1>store fornecedor</h1>
+<h1>store fornecedores</h1>
