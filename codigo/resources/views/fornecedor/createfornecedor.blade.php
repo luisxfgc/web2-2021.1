@@ -7,23 +7,25 @@
         <div class="mb-4">
             <h2>Cadastro de Fornecedores</h2>
         </div>
-        <form action="{{ route('fornecedorstore') }}" method="post">
+        <form class="form-floating" action="{{ route('fornecedorstore') }}" method="post" class="pb-2">
             @csrf
-            <div class="form-group">
-                <label for="nome">Nome</label>
-                <input type="text" name="nome" id="nome" class="form-control">
+            <div class="form-floating mb-2">
+                <input type="text" class="form-control" name="nome" id="nome" placeholder="nome">
+                <label for="floatingInput">Nome</label>
             </div>
-
-            <div class="form-group">
-                <label for="cnpj">CNPJ</label>
-                <input type="text" name="cnpj" id="cnpj" class="form-control">
+        
+            <div class="form-floating mb-2">
+                <input type="text" name="cnpj" id="cnpj" class="form-control" placeholder="cnpj">
+                <label for="debito">CNPJ</label>
             </div>
-
-            <div class="form-group">
+            
+            <div class="form-floating mb-4">
+                <input type="text" name="descricao" id="descricao" class="form-control" placeholder="descricao">
                 <label for="descricao">Descrição</label>
-                <input type="text" name="descricao" id="descricao" class="form-control">
             </div>
-            <button type="submit" class="btn btn-primary">Cadastrar</button>
+            <div class="w-100 d-flex justify-content-center flex-column">
+                <button type="submit" class="btn btn-primary">Cadastrar</button>
+            </div>
         </form>
     </section>
 @endsection

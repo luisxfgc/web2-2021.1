@@ -34,7 +34,7 @@ Route::get('clientes/showendereco', [ClienteController::class, 'showendereco']);
 
 Route::get('/createfornecedor', [FornecedorController::class, 'create'])->name('fornecedorcreate');
 Route::post('/storefornecedor', [FornecedorController::class, 'store'])->name('fornecedorstore');
-Route::post('/showfornecedor', [FornecedorController::class, 'show'])->name('fornecedorshow');
+Route::post('fornecedor/showfornecedor', [FornecedorController::class, 'show'])->name('fornecedorshow');
 Route::delete('/fornecedor/{id}', [FornecedorController::class, 'destroy'])->name('delete');
 Route::get('/edit/{id}', [FornecedorController::class, 'edit'])->name('edit');
 Route::put('/update/{id}', [FornecedorController::class, 'update'])->name('update');
