@@ -1,19 +1,6 @@
 
-# Atividade 5 
+# Projeto1 - Unidade 1
 
-Utilizando os conceitos apresentados em aula e o material sobre layouts:
+* 1  - Fazer a branch:   Projeto1-1Unidade
 
-## Considerando as técnicas de construção de layouts: Faça 3 layouts  para seu sistema utilizando cada uma das técnicas abaixo
-
-- 1 Layout utilizando a tecnica Normal Flow
-
-https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Normal_Flow
-
-- 1 Layout utilizando Flexbox
-
-https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox
-
-- 1 Layout utilizando layout-grids
-
-https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Grids
-
+* 2 - Atualizar nessa branch os conceitos  estudados até o momento (layout, model, views)
