@@ -15,10 +15,11 @@ class ClienteTable extends Migration
     {
         //
         Schema::create('clientes', function (Blueprint $table) {
-            $table->id();
+            $table->increments('id');
             $table->string('nome');
-            $table->string('telefone')->unique();
-            $table->string('endereco');
+            $table->string('debito');
+            $table->string('descricao');
+            $table->timestamps();
         });
     }
 

@@ -15,10 +15,11 @@ class FornecedorTable extends Migration
     {
         //
         Schema::create('fornecedores', function (Blueprint $table) {
-            $table->id();
+            $table->increments('id');
             $table->string('nome');
             $table->string('cnpj')->unique();
             $table->string('descricao');
+            $table->timestamps();
         });
     }
 

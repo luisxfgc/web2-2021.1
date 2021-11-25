@@ -9,12 +9,12 @@ class FornecedorController extends Controller
 {
     //
     public function show(){
-        $fornecedor =FornecedorModel::all();
+        $fornecedor = FornecedorModel::all();
         $id = FornecedorModel::all();
         $nome = FornecedorModel::all();
         $cnpj = FornecedorModel::all();
         $descricao = FornecedorModel::all();
-        return view('fornecedor.mostrarFornecedor', [
+        return view('fornecedor.showfornecedor', [
             'fornecedor'=>$fornecedor,
             'fornecedor.id'=>$id,
             'fornecedor.endereco'=>$nome,
@@ -24,10 +24,17 @@ class FornecedorController extends Controller
         ]);
     }
     public function create(){
-        $fornecedor = FornecedorModel::all();
-        return view('fornecedor.create');
+        return view('fornecedor.createfornecedor');
     }
-    public function store(){
-        return view('fornecedor.store');
+
+    public function store(Request $request){
+        $fornecedor = new FornecedorModel();
+        $fornecedor->id = $request->id;
+        $fornecedor->nome = $request->nome;
+        $fornecedor->cnpj = $request->cnpj;
+        $fornecedor->descricao = $request->descricao;
+        $fornecedor->save();
+        return redirect('fornecedorshow');
+        
     }
 }

@@ -21,23 +21,23 @@ Route::get('/', function () {
 
 // Rotas para cliente
 
-// Route::get('/clientes', [ClienteController::class, 'index']);
-
-Route::get('/index', [ClienteController::class, 'index']);
-
-Route::get('/create', [ClienteController::class, 'create']);
-
-Route::get('/store', [ClienteController::class, 'store']);
-
-Route::get('clientes/mostrarClientes', [ClienteController::class, 'show']);
+Route::get('/index', [ClienteController::class, 'index'])->name('clienteindex');
+Route::get('/create', [ClienteController::class, 'create'])->name('clientecreate');
+Route::get('/show', [ClienteController::class, 'show'])->name('clienteshow');
+Route::delete('/clientes/{id}', [ClienteController::class, 'destroy'])->name('delete');
+Route::post('/store', [ClienteController::class, 'store'])->name('store');
+Route::get('/edit/{id}', [ClienteController::class, 'edit'])->name('edit');
+Route::put('/update/{id}', [ClienteController::class, 'update'])->name('update');
+Route::get('clientes/showendereco', [ClienteController::class, 'showendereco']);
 
 // Rotas para fornecedor
 
-Route::get('fornecedor/create', [FornecedorController::class, 'create']);
-
-Route::get('fornecedor/store', [FornecedorController::class, 'store']);
-
-Route::get('fornecedor/mostrarFornecedor', [FornecedorController::class, 'show']);
-
+Route::get('/createfornecedor', [FornecedorController::class, 'create'])->name('fornecedorcreate');
+Route::post('/storefornecedor', [FornecedorController::class, 'store'])->name('fornecedorstore');
+Route::post('/showfornecedor', [FornecedorController::class, 'show'])->name('fornecedorshow');
+Route::delete('/fornecedor/{id}', [FornecedorController::class, 'destroy'])->name('delete');
+Route::get('/edit/{id}', [FornecedorController::class, 'edit'])->name('edit');
+Route::put('/update/{id}', [FornecedorController::class, 'update'])->name('update');
+Route::get('fornecedor/showendereco', [FornecedorController::class, 'showendereco']);
 
 

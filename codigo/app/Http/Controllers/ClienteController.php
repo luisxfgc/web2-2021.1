@@ -7,23 +7,23 @@ use Illuminate\Http\Request;
 
 class ClienteController extends Controller
 {
-    //
-    // public function index(){
-    //     $clientes = ClienteModel::all();
-    //     // echo $clientes;
-    //     return view('clientes.index', ['clientes'=>$clientes]);
-    // }
+    
+    public function index(){;
+        return view('welcome');
+    }
 
     public function show(){
         $clientes = ClienteModel::all();
         $id = ClienteModel::all();
-        $endereco = ClienteModel::all();
-        $telefone = ClienteModel::all();
-        return view('clientes.mostrarClientes', [
+        $nome = ClienteModel::all();
+        $debito = ClienteModel::all();
+        $descricao = ClienteModel::all();
+        return view('clientes.show', [
             'clientes'=>$clientes,
-            'clientes.id'=>$id,
-            'clientes.endereco'=>$endereco,
-            'clientes.telefone'=>$telefone,
+            "clientes.id"=>$id,
+            'clientes.nome'=>$nome,
+            'clientes.debito'=>$debito,
+            'clientes.descricao'=>$descricao,
 
         ]);
     }
@@ -32,7 +32,14 @@ class ClienteController extends Controller
         return view('clientes.create');
     }
 
-    public function store(){
-        return view('clientes.store');
+    public function store(Request $request){
+        $clientes = new ClienteModel();
+        $clientes->id = $request->id;
+        $clientes->nome = $request->nome;
+        $clientes->debito = $request->debito;
+        $clientes->descricao = $request->descricao;
+        $clientes->save();
+        return redirect('clienteshow');
+        
     }
 }
