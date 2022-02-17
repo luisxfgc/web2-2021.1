@@ -17,5 +17,5 @@ Repositório para armazenas as atividades realizadas durante a disciplina de Lab
 > ### Branches dos projetos:
 >  
 > * #### <a href="https://github.com/luisxfgc/web2-2021.1-1/tree/Projeto1-1Unidade">Projeto I
-> * #### <a href="https://github.comluisxfgc/web2-2021.1-1/tree/ProjetoII-layout">Projeto II layout
+> * #### <a href="https://github.com/luisxfgc/web2-2021.1-1/tree/ProjetoII-layout">Projeto II layout
 > * #### <a href="https://github.com/luisxfgc/web2-2021.1-1/tree/projetoII-backend">Projeto II backend
