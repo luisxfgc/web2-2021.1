@@ -27,18 +27,14 @@ git clone <link>
 
 
 Depois de instalar o `Docker` e o `laradock` entre na pasta criada e use o seguinte comando: 
-> 
+##### (Esse comando pode levar alguns minutos dependendo da configuração do seu hardware).
  ```
  docker-compose up -d mysql phpmyadmin apache2 workspace
  ```
-***Esse comando pode levar alguns minutos dependendo da configuração do teu hardware.***
-
-
-  Em seguida entre na pasta clonada pelo gerenciador de arquivos do seu computador ou utilizando o seguinte comando:
+Em seguida entre na pasta clonada pelo gerenciador de arquivos do seu computador ou utilizando o seguinte comando:
 ```
 cd + Tecla tab ou cd web2-2021.1
 ```
-
 *Feito isso, o sistema estará pronto pra você usá-lo em sua máquina!* 🌟
 
 ---
@@ -56,7 +52,7 @@ cd + Tecla tab ou cd web2-2021.1
   - Pesquisa de dados
   - Upload de imagens
  
-## Imagens do Sistema: 
+##  📷 Imagens do Sistema: 
 
 ℹ️ (Clique nas imagens para visualizá-las em um tamanho maior e caso queira testar o sistema, veja no link no top da página):
 
