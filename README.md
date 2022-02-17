@@ -1,5 +1,6 @@
-# Atividade 2 
+# Atividade 3
 
-1 - Criar Rotas (create e store) 
+## Desenvolver Views:
 
-2 - Criar View(fornecedor.create)
+* mostrarCliente
+* mostrarFornecedor 
